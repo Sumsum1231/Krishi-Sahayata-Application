@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ngx-speech-recognition": "^0.0.4"
+  }
+}
