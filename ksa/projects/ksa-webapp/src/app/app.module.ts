@@ -7,16 +7,21 @@ import { HeaderComponent } from './header/header.component';
 import { FeatureCardComponent } from './feature-card/feature-card.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FeatureCardComponent,
+    
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+   
+    
   ],
   providers: [
     provideClientHydration()
