@@ -1,9 +1,6 @@
-<app-header class="mb-8"></app-header>
-<div class="bg-cover bg-center background-image flex justify-center items-center" style="background-image: url('./assets/bg.jpg'); ">
-  <div class="container max-w-screen-xl flex flex-col items-center justify-center">
-    <app-feature-card></app-feature-card>
-    <app-footer class="mt-4 w-full"></app-footer>
-  </div>
-  
-</div>
 
+<app-header></app-header>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

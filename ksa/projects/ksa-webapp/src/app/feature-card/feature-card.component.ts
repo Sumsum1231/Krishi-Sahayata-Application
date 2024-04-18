@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-feature-card',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './feature-card.component.css'
 })
 export class FeatureCardComponent {
+ 
+
+
+  
   audio1: HTMLAudioElement | null = null;
   audio2: HTMLAudioElement | null = null;
   audio3: HTMLAudioElement | null = null;
@@ -26,6 +31,7 @@ export class FeatureCardComponent {
       this.audio5.src = './assets/premium-calculator.mp3'; // Path to your fifth audio file
     }
   }
+  
 
   playAudio(): void {
     if (this.audio1) {
