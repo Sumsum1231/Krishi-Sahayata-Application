@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FeatureCardComponent } from './feature-card/feature-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -13,6 +14,7 @@ import { FeatureCardComponent } from './feature-card/feature-card.component';
     AppComponent,
     HeaderComponent,
     FeatureCardComponent,
+    FooterComponent,
     
    
   ],
