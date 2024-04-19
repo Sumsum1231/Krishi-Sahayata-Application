@@ -19,7 +19,9 @@ const routes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'home', component: HomePageComponent},
   { path: 'complain', component:ComplainFormComponent } ,
-  {path:'video',component:VideoComponent}// Replace with your about component
+  {path:'video',component:VideoComponent},
+  {path:'about',component:AboutPageComponent},
+  {path:'contact',component:ContactComponent}// Replace with your about component
   // Add more routes for other components
 ];
 @NgModule({
