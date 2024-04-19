@@ -11,11 +11,15 @@ import { ComplainFormComponent } from './complain-form/complain-form.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { VideoComponent } from './video/video.component';
+import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   // Replace with your home component
   {path: '', component: HomePageComponent},
   {path: 'home', component: HomePageComponent},
-  { path: 'complain', component:ComplainFormComponent } // Replace with your about component
+  { path: 'complain', component:ComplainFormComponent } ,
+  {path:'video',component:VideoComponent}// Replace with your about component
   // Add more routes for other components
 ];
 @NgModule({
@@ -26,7 +30,10 @@ const routes: Routes = [
     FooterComponent,
     CarausalComponent,
     ComplainFormComponent,
-    HomePageComponent
+    HomePageComponent,
+    AboutPageComponent,
+    VideoComponent,
+    ContactComponent
     
    
   ],
