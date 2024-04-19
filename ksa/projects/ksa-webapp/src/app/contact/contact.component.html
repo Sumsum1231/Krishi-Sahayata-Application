@@ -11,34 +11,34 @@
         </div>
         <div class="box">
           <!-- Form -->
-          <div class="contact form">
+          <div  class="contact form">
             <h3>Send a message</h3>
-            <form    method="post" >
+            <form [formGroup]="form"  (submit)="sendEmail()" >
               <div class="formbox">
                 <div class="row50">
                   <div class="inputbox">
                     <span>First name</span>
-                    <input type="text" placeholder="Enter Your first name " />
+                    <input formControlName="firstname" type="text" placeholder="Enter Your first name " />
                   </div>
                   <div class="inputbox">
                     <span>Last name</span>
-                    <input type="text" placeholder="Enter your last name" />
+                    <input formControlName="lastname" type="text" placeholder="Enter your last name" />
                   </div>
                 </div>
                 <div class="row50">
                   <div class="inputbox">
                     <span>Email</span>
-                    <input type="email" placeholder="Enter Your mail" />
+                    <input formControlName="email" type="email" placeholder="Enter Your mail" />
                   </div>
                   <div class="inputbox">
                     <span>Mobile</span>
-                    <input type="text" placeholder="Enter Your number" />
+                    <input formControlName="mobile" type="number" placeholder="Enter Your number" />
                   </div>
                 </div>
                 <div class="row100">
                   <div class="inputbox">
-                    <span>Message</span>
-                    <textarea placeholder="Write Your Message"></textarea>
+                    <span>Ouery or Message</span>
+                    <textarea formControlName="message" placeholder="Write Your Message"></textarea>
                   </div>
                 </div>
                 <div class="row100">
