@@ -9,9 +9,5 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'ksa-webapp';
-  constructor(private router: Router) { }
-
-  navigateToForm() {
-    this.router.navigate(['/complain-form']); // Navigate to the 'dashboard' route
-  }
+  
 }

@@ -16,6 +16,7 @@ export class FeatureCardComponent {
   audio3: HTMLAudioElement | null = null;
   audio4: HTMLAudioElement | null = null;
   audio5: HTMLAudioElement | null = null;
+  audio6: HTMLAudioElement | null = null;
 
   constructor() {
     if (typeof window !== 'undefined') {
@@ -29,6 +30,8 @@ export class FeatureCardComponent {
       this.audio4.src = './assets/crop-loss-verification.mp3'; // Path to your fourth audio file
       this.audio5 = new Audio();
       this.audio5.src = './assets/premium-calculator.mp3'; // Path to your fifth audio file
+      this.audio6 = new Audio();
+      this.audio6.src = './assets/apply-insurance.mp3'; // Path to your sixth audio file
     }
   }
   
@@ -62,6 +65,12 @@ export class FeatureCardComponent {
     }
   }
 
+  playAudio5(): void {
+    if (this.audio6) {
+      this.audio6.play();
+    }
+  }
+
   pauseAudio(): void {
     if (this.audio1) {
       this.audio1.pause();
@@ -92,6 +101,12 @@ export class FeatureCardComponent {
     if (this.audio5) {
       this.audio5.pause();
       this.audio5.currentTime = 0;
+    }
+  }
+  pauseAudio5(): void {
+    if (this.audio6) {
+      this.audio6.pause();
+      this.audio6.currentTime = 0;
     }
   }
 }
