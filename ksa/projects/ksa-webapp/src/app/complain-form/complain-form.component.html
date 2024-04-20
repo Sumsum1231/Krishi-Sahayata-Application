@@ -1,150 +1,105 @@
-<div class="container">
-        <header>FARMER DETAILS</header>
-        <form action="#">
-            <div class="form first">
+ 
 
-             <div class="details personal">
-                <span class="title">Personal Details</span>
-                <div class="fields">
-                <div class="input-field">
-                    <label > Full name</label>
-                    <input type="text" placeholder="Enter Your name" required>
-                </div>
-
-                <div class="input-field">
-                    <label >Relationship</label>
-                    <input type="text" placeholder="Enter Relationship" required>
-                </div>
-                <div class="input-field">
-                    <label >Guardian Name</label>
-                    <input type="text" placeholder="Enter guardian Name" required>
-                </div>
-
-                <div class="input-field">
-                    <label > Email</label>
-                    <input type="text" placeholder="Enter Your emailId" required>
-                </div>
-
-                <div class="input-field">
-                    <label > Mobile number</label>
-                    <input type="number" placeholder="Enter Your number" required>
-                </div>
-
-                <div class="input-field">
-                    <label > Age</label>
-                    <input type="number" placeholder="Enter Your age" required>
-                </div>
-
-                <div class="input-field">
-                    <label > Gender</label>
-                    <input type="date" placeholder="Enter Gender" required>
-                </div>
-                <div class="input-field">
-                    <label > Farmer type</label>
-                    <input type="text" placeholder="Enter Farmer Type" required>
-                </div>
-
-                <div class="input-field">
-                    <label > Occupation</label>
-                    <input type="text" placeholder="Enter Your work" required>
-                </div>
-                </div>
-
-             </div>
-
-             <div class="details ID">
-                <span class="title">Farmer ID</span>
-                <div class="fields">
-                <div class="input-field">
-                    <label > ID number</label>
-                    <input type="number" placeholder="Enter ID number" required>
-                </div>
-                </div>
-             </div>
-            </div>
+<div class="container " style="margin-top: 8px; margin-bottom: auto;">
+    <header>REPORT CROP LOSS</header>
+    <form action="#">
+        <div class="form first">
             <div class="details personal">
-                <span class="title">Account Details</span>
                 <div class="fields">
-                <div class="input-field">
-                    <label >IFSC Code</label>
-                    <input type="BigInt" placeholder="Enter Your IFSC code" required>
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="aadhar" placeholder="Enter Name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="claimtype">Claim Type</label>
+                        <select id="category" required>
+                            <option value="" disabled selected>Select Claim Type</option>
+                            <option value="Farm Vehicle Replacement">Farm Vehicle Replacement</option>
+                            <option value="Irrigation System Maintenance">Irrigation System Maintenance</option>
+                            <option value="Farm Liability Insurance">Farm Liability Insurance</option>
+                            <option value="Agricultural Building Repair">Agricultural Building Repair</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="farmer-type">Farmer Type</label>
+                        <select id="farmer-type" required>
+                            <option value="" disabled selected>Select Farmer Type</option>
+                            <option value="small">Small</option>
+                            <option value="semi-Medium">Semi-medium</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" placeholder="Enter Claim Amount" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="state">State</label>
+                        <select id="state" required>
+                            <option value="" disabled selected>Select State</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Punjab">Punjab</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="district">District</label>
+                        <input type="text" id="district" placeholder="Enter Your District" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="bank-name">Bank Name</label>
+                        <input type="text" id="bank-name" placeholder="Enter Bank Name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="bank-branch">Bank Branch Number</label>
+                        <input type="text" id="bank-branch" placeholder="Enter Bank Branch Number" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="account-number">Saving Bank Account Number</label>
+                        <input type="number" id="account-number" placeholder="Enter Saving Bank Account Number" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter Your Address" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="pincode">Pincode</label>
+                        <input type="number" id="pincode" placeholder="Enter Pincode" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="area-impacted">Area Impacted</label>
+                        <input type="number" id="area-impacted" placeholder="Enter Area Impacted" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="cause-of-loss">Cause of Loss</label>
+                        <select id="cause-of-loss" required>
+                            <option value="" disabled selected>Select Cause of Loss</option>
+                            <option value="drought">Drought</option>
+                            <option value="flood">Flood</option>
+                            <option value="frost">Frost</option>
+                            <option value="hailstorm">Hailstorm</option>
+                            <option value="windstorm">Windstorm</option>
+                            <option value="excessive_heat">Excessive Heat</option>
+                            <option value="excessive _rainfall">Excessive Rainfall</option>
+                        </select>
+                    </div>
                 </div>
+            </div>
+            <!-- End Crop Sowing Details Section -->
 
-                <div class="input-field">
-                    <label >State</label>
-                    <input type="text" placeholder="Enter state" required>
-                </div>
-                <div class="input-field">
-                    <label >District</label>
-                    <input type="text" placeholder="Enter district name" required>
-                </div>
+            <button type="submit">Submit</button> <!-- Added a submit button -->
 
-                <div class="input-field">
-                    <label >Bank Name</label>
-                    <input type="text" placeholder="Enter Your Bank Name" required>
-                </div>
+        </div>
+    </form>
+</div>
 
-                <div class="input-field">
-                    <label >Bank Branch number</label>
-                    <input type="BigInt" placeholder="Enter Your number" required>
-                </div>
-                <div class="input-field">
-                    <label >Savings Bank A/C no.</label>
-                    <input type="BigInt" placeholder="Enter Your bank a/c no." required>
-                </div>
-                <div class="input-field">
-                    <label >Confirms Saving Bank</label>
-                    <input type="BigInt" placeholder="Confirms Bank A/C no." required>
-                </div>
-
-               </div>
-
-           
-            <div class="form second">
-
-                <div class="details address">
-                   <span class="title">Registration Details</span>
-                   <div class="fields">
-                   <div class="input-field">
-                       <label > State</label>
-                       <input type="text" placeholder="Enter Your state" required>
-                   </div>
-   
-                   <div class="input-field">
-                       <label > District</label>
-                       <input type="text" placeholder="Enter Your district" required>
-                   </div>
-   
-                   <div class="input-field">
-                       <label >Sub-District</label>
-                       <input type="number" placeholder="Enter Your subdistrict" required>
-                   </div>
-   
-                   <div class="input-field">
-                       <label >Residential Village/Town</label>
-                       <input type="text" placeholder="Enter your village" required>
-                   </div>
-   
-                   <div class="input-field">
-                       <label >Address</label>
-                       <input type="text" placeholder="Enter Your Full Address" required>
-                   </div>
-                   <div class="input-field">
-                    <label >Pin Code</label>
-                    <input type="number" placeholder="Enter The Pincode" required>
-                </div>
-                   </div>
-   
-                </div>
-   
-               
-                   <button class="nextBtn">
-                       <span class="btnT">Create User</span>
-                       <i class="uil uil-navigator"></i>
-                   </button>
-   
-                </div>
-               </div>
-        </form>
-    </div>
  
