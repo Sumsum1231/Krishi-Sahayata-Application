@@ -13,6 +13,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { VideoComponent } from './video/video.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ApplyInsuranceFormComponent } from './apply-insurance-form/apply-insurance-form.component';
 
 const routes: Routes = [
   // Replace with your home component
@@ -36,6 +37,7 @@ const routes: Routes = [
     AboutPageComponent,
     VideoComponent,
     ContactComponent,
+    ApplyInsuranceFormComponent,
     
     
    
