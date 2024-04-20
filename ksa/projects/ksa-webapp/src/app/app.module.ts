@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: 'complain', component:ComplainFormComponent } ,
   {path:'video',component:VideoComponent},
   {path:'about',component:AboutPageComponent},
-  {path:'contact',component:ContactComponent}// Replace with your about component
+  {path:'contact',component:ContactComponent},
+  {path:'apply',component:ApplyInsuranceFormComponent}// Replace with your about component
   
 ];
 @NgModule({
