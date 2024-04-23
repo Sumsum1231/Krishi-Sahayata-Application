@@ -33,6 +33,40 @@
       "pincode": 831004,
       "areaImpacted": 1,
       "causeOfLoss": "hailstorm"
+    },
+    {
+      "id": "bbfe",
+      "name": "SUMIT DASH",
+      "claimType": "Farm Vehicle Replacement",
+      "farmerType": "small",
+      "amount": 11,
+      "phone": "9861770516",
+      "state": "Kerala",
+      "district": "fef",
+      "bankName": "SBI",
+      "bankBranch": "12345",
+      "accountNumber": 25,
+      "address": "VASTU APARTMENT, UMARIYA",
+      "pincode": 453331,
+      "areaImpacted": 10,
+      "causeOfLoss": "flood"
+    },
+    {
+      "id": "e4c1",
+      "name": "SUMIT DASH",
+      "claimType": "Farm Vehicle Replacement",
+      "farmerType": "small",
+      "amount": 4,
+      "phone": "9861770516",
+      "state": "Andhra Pradesh",
+      "district": "efwsfa",
+      "bankName": "SBI",
+      "bankBranch": "1234",
+      "accountNumber": 11,
+      "address": "VASTU APARTMENT, UMARIYA",
+      "pincode": 453331,
+      "areaImpacted": 5,
+      "causeOfLoss": "windstorm"
     }
   ],
   "apply": [
@@ -67,6 +101,38 @@
       "date": "2024-04-05",
       "area": 3,
       "season": "Kharif"
+    },
+    {
+      "id": "2e7a",
+      "aadhar": 123456789012,
+      "name": "SUMIT DASH",
+      "district": "sfga",
+      "pincode": 453331,
+      "category": "Small Farmer",
+      "account": 12441241111111,
+      "branch": "hhsh",
+      "ifsc": "rfsfaf",
+      "mobile": "9861770516",
+      "crop": "rabi",
+      "date": "2024-04-26",
+      "area": 3,
+      "season": "Rabi"
+    },
+    {
+      "id": "abb1",
+      "aadhar": 41244,
+      "name": "SUMIT DASH",
+      "district": "eqrwf",
+      "pincode": 453331,
+      "category": "Marginal Farmer",
+      "account": 6,
+      "branch": "CSE",
+      "ifsc": "rfsfaf",
+      "mobile": "9861770516",
+      "crop": "rabi",
+      "date": "2024-05-04",
+      "area": 5,
+      "season": "Rabi"
     }
   ]
 }

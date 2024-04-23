@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ComplaintService {
-  private dbUrl = 'http://localhost:3000/complaints'; // Correct endpoint
+  private dbUrl = 'http://localhost:4000/complaints'; // Correct endpoint
 
   constructor(private http: HttpClient) {}
 

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApplyService {
-  private dbUrl = 'http://localhost:3000/apply'; // Correct endpoint for insurance applications
+  private dbUrl = 'http://localhost:4000/apply'; // Correct endpoint for insurance applications
 
   constructor(private http: HttpClient) {}
 
