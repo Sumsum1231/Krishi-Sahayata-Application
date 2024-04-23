@@ -14,6 +14,9 @@ import { VideoComponent } from './video/video.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ApplyInsuranceFormComponent } from './apply-insurance-form/apply-insurance-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ComplaintService } from './complaint.service';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   // Replace with your home component
@@ -49,13 +52,15 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes)
-    
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+    FormsModule
    
     
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    ComplaintService
   ],
   bootstrap: [AppComponent]
 })
