@@ -9,6 +9,15 @@ import emailjs from "@emailjs/browser"
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  isEnglishDisplayed: boolean = true;
+
+  translate(): void {
+    this.isEnglishDisplayed = !this.isEnglishDisplayed;
+  }
+
+  getButtonText(): string {
+    return this.isEnglishDisplayed ? 'ଓଡ଼ିଆ' : 'English';
+  }
   
   form: FormGroup = this.fb.group({
     firstname: '',

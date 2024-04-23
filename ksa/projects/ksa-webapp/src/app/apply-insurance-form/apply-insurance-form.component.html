@@ -1,6 +1,10 @@
- 
+<button (click)="translate()"  style=" float:right; position: sticky; top: 10px; background-color: #25312d;" class="mt-2     text-white font-bold py-2 px-4 rounded">
+    {{ getButtonText() }}
+  </button>
+<div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-10 md:py-12 md:px-6 py-9 px-4">
+     
 
-<div class="container" style="margin-top: 8px; margin-bottom: auto;">
+<div class="container" id="English" style="margin-top: 8px; margin-bottom: auto;" *ngIf="isEnglishDisplayed">
     <header>FARMER DETAILS</header>
     <form action="#">
         <div class="form first">
@@ -98,4 +102,102 @@
     </form>
 </div>
 
- 
+  
+
+<div class="container" id="Odia" style="margin-top: 8px; margin-bottom: auto;" *ngIf="!isEnglishDisplayed">
+    <header>କୃଷକ ବିବରଣୀ</header>
+    <form action="#">
+        <div class="form first">
+
+            <!-- Farmer Details Section -->
+            <div class="details personal">
+                <div class="fields">
+                    <div class="input-field">
+                        <label for="aadhar">ଆଧାର ସଂଖ୍ୟା</label>
+                        <input type="number" id="aadhar" placeholder="ଆଧାର ନମ୍ବର ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="name">କୃଷକଙ୍କ ନାମ</label>
+                        <input type="text" id="name" placeholder="ନାମ ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="district">ଜିଲ୍ଲା</label>
+                        <input type="text" id="district" placeholder="ଜିଲ୍ଲା ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="pincode">ପିନ୍ କୋଡ୍</label>
+                        <input type="number" id="pincode" placeholder="ପିନକୋଡ୍ ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="category">କୃଷକ ଶ୍ରେଣୀ</label>
+                        <select id="category" required>
+                            <option value="" disabled selected>କୃଷକ ବର୍ଗ ଚୟନ କରନ୍ତୁ </option>
+                            <option value="Small Farmer">କ୍ଷୁଦ୍ର କୃଷକ</option>
+                            <option value="Marginal Farmer">ମଧ୍ୟପ୍ରଦେଶ କୃଷକ</option>
+                            <option value="Big Farmer">ବଡ କୃଷକ</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="account">ବାନଜିଆ ଖଟା ସାଙ୍କିଆ</label>
+                        <input type="number" id="account" placeholder="ବାଙ୍କ ଏକାଉଣ୍ଟ ନମ୍ବର ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="branch">ଶାଖା ନାମ</label>
+                        <input type="text" id="branch" placeholder="ଶାଖା ନାମ ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="ifsc">IFSC କୋଡ୍</label>
+                        <input type="text" id="ifsc" placeholder="IFSC କୋଡ୍ ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="mobile">ମୋବାଇଲ୍ ସଂଖ୍ୟା</label>
+                        <input type="tel" id="mobile" placeholder="ମୋବାଇଲ୍ ନମ୍ବର ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- End Farmer Details Section -->
+
+            <!-- Crop Sowing Details Section -->
+            <div class="details crop">
+                <header></header>
+                <div class="fields">
+                    <div class="input-field">
+                        <label for="crop">ଫସାଲା ନାମ</label>
+                        <input type="text" id="crop" placeholder="ଫସଳ ନାମ ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="date">ବିବରାନା ତିଥୀ</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="area">କାଷ୍ଟି (କ୍ଷେତ୍ରାପାଲା) ବିବରାନା</label>
+                        <input type="number" id="area" placeholder="ବୋନା କ୍ଷେତ୍ର ଦାଖଲ କରନ୍ତୁ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="season">ବାଛନ୍ତୁ</label>
+                        <select id="season" required>
+                            <option value="" disabled selected>ସୀଜନ ବାଛନ୍ତୁ</option>
+                            <option value="Rabi">ରବି</option>
+                            <option value="Kharif">ଖରିପ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- End Crop Sowing Details Section -->
+
+            <button type="submit">ଡାଖାଲା କାରିବା</button> <!-- Added a submit button -->
+
+        </div>
+    </form>
+</div>
