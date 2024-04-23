@@ -120,23 +120,23 @@
     style="margin-top: 8px; margin-bottom: auto"
     *ngIf="!isEnglishDisplayed"
   >
-    <header>ଫସଲ କ୍ଷୟ ରିପୋର୍ଟ କରନ୍ତୁ</header>
+    <header>ଫସଲ କ୍ଷୟକ୍ଷତି ରିପୋର୍ଟ କରନ୍ତୁ</header>
     <form #formOdia="ngForm" (ngSubmit)="onSubmit(formOdia)">
       <div class="form first">
         <div class="details personal">
           <div class="fields">
             <div class="input-field">
               <label for="name">ନାମ</label>
-              <input type="text" id="name" name="name" placeholder="ନାମ ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <input type="text" id="name" name="name" placeholder="ନାମ ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
               <label for="claimtype">ବୀମା ଦାବିର ପ୍ରକାର</label>
               <select id="category" name="claimType" required ngModel>
                 <option value="" disabled selected>ବୀମା ଦାବି ପ୍ରକାର ଚୟନ କରନ୍ତୁ</option>
-                <option value="Farm Vehicle Replacement">ଫାର୍ମ ଯାନ ପ୍ରତିସ୍ଥାପନ</option>
+                <option value="Farm Vehicle Replacement">ଚାଷରେ ବ୍ୟବହୃତ ଗାଡ଼ି ବଦଳାଇବା ପାଇଁ</option>
                 <option value="Irrigation System Maintenance">ଜଳସେଚନ ବ୍ୟବସ୍ଥାର ରକ୍ଷଣାବେକ୍ଷଣ</option>
                 <option value="Farm Liability Insurance">କୃଷି ଦାୟିତ୍ୱ ବୀମା</option>
-                <option value="Agricultural Building Repair">କୃଷି ଭବନ ମର୍ମତ</option>
+                <option value="Agricultural Building Repair">କୃଷି ଗୃହ ମରାମତି</option>
               </select>
             </div>
             <div class="input-field">
@@ -151,7 +151,7 @@
             </div>
             <div class="input-field">
               <label for="amount"> ରକମ</label>
-              <input type="number" id="amount" name="amount" placeholder=" ଦାବିତ ମୁଆବଜା ରୁପିଆ" required ngModel />
+              <input type="number" id="amount" name="amount" placeholder=" ଆପଣଙ୍କ ଦାବି ରାଶି ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
               <label for="phone">ଫୋନ ନମ୍ବର</label>
@@ -164,8 +164,8 @@
                 <option value="Bihar">ବିହାର</option>
                 <option value="Odisha">ଓଡିଶା</option>
                 <option value="Mizoram">ମିଜୋରାମ</option>
-                <option value="Andhra Pradesh">ଆନ୍ଧ୍ର ପ୍ରଦେଶ</option>
-                <option value="Kerala">କେରାଳ</option>
+                <option value="Andhra Pradesh">ଆନ୍ଧ୍ରପ୍ରଦେଶ</option>
+                <option value="Kerala">କେରଳ</option>
                 <option value="Manipur">ମଣିପୁର</option>
                 <option value="Punjab">ପଞ୍ଜାବ</option>
               </select>
@@ -176,35 +176,35 @@
             </div>
             <div class="input-field">
               <label for="bank-name">ବ୍ୟାଙ୍କ ନାମ</label>
-              <input type="text" id="bank-name" name="bankName" placeholder="ବ୍ୟାଙ୍କ ନାମ ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <input type="text" id="bank-name" name="bankName" placeholder="ବ୍ୟାଙ୍କ ନାମ ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
-              <label for="bank-branch">ବ୍ୟାଙ୍କ ଶାଖା ସଂଖ୍ୟା</label>
-              <input type="text" id="bank-branch" name="bankBranch" placeholder="ବ୍ୟାଙ୍କ ଶାଖା ସଂଖ୍ୟା ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <label for="bank-branch">ବ୍ୟାଙ୍କ ବ୍ରାଞ୍ଚ ସଂଖ୍ୟା</label>
+              <input type="text" id="bank-branch" name="bankBranch" placeholder="ବ୍ୟାଙ୍କ ବ୍ରାଞ୍ଚ ନମ୍ବର ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
               <label for="account-number">ସେଭିଂସ୍ ବ୍ୟାଙ୍କ ଖାତା ନମ୍ବର</label>
-              <input type="number" id="account-number" name="accountNumber" placeholder="ସେଭିଂସ୍ ବ୍ୟାଙ୍କ ଖାତା ନମ୍ବର ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <input type="number" id="account-number" name="accountNumber" placeholder="ସେଭିଂସ୍ ବ୍ୟାଙ୍କ ଖାତା ନମ୍ବର ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
               <label for="address">ଠିକଣା</label>
-              <input type="text" id="address" name="address" placeholder="ଠିକଣା ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <input type="text" id="address" name="address" placeholder="ଠିକଣା ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
               <label for="pincode">ପିନକୋଡ୍</label>
-              <input type="number" id="pincode" name="pincode" placeholder="ପିନକୋଡ୍ ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <input type="number" id="pincode" name="pincode" placeholder="ପିନକୋଡ୍ ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
               <label for="area-impacted">କ୍ଷତିଗ୍ରସ୍ତ କ୍ଷେତ୍ରଫଳ</label>
-              <input type="number" id="area-impacted" name="areaImpacted" placeholder="କ୍ଷତିଗ୍ରସ୍ତ କ୍ଷେତ୍ରଫଳ ପ୍ରବେଶ କରନ୍ତୁ" required ngModel />
+              <input type="number" id="area-impacted" name="areaImpacted" placeholder="କ୍ଷତିଗ୍ରସ୍ତର କ୍ଷେତ୍ରଫଳ ଲେଖନ୍ତୁ" required ngModel />
             </div>
             <div class="input-field">
-              <label for="cause-of-loss">କ୍ଷୟର କାରଣ</label>
+              <label for="cause-of-loss">କ୍ଷୟକ୍ଷତିର କାରଣ</label>
               <select id="cause-of-loss" name="causeOfLoss" required ngModel>
-                <option value="" disabled selected>କ୍ଷୟର କାରଣ ବାଛନ୍ତୁ</option>
+                <option value="" disabled selected>କ୍ଷୟକ୍ଷତିର କାରଣ ବାଛନ୍ତୁ</option>
                 <option value="drought">ଖରା</option>
                 <option value="flood">ବନ୍ୟା</option>
-                <option value="frost">ପିଲା</option>
+                <option value="frost">ଥଣ୍ଡା</option>
                 <option value="hailstorm">ଝଡ଼</option>
                 <option value="windstorm">ପବନ ଝଡ଼</option>
                 <option value="excessive_heat">ଅତ୍ୟଧିକ ତାପ</option>

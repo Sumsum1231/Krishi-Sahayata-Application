@@ -67,6 +67,23 @@
       "pincode": 453331,
       "areaImpacted": 5,
       "causeOfLoss": "windstorm"
+    },
+    {
+      "id": "eab6",
+      "name": "Om Tanmaya Pati",
+      "claimType": "Farm Vehicle Replacement",
+      "farmerType": "large",
+      "amount": 2000,
+      "phone": "06370081836",
+      "state": "Odisha",
+      "district": "Khordha",
+      "bankName": "PNB",
+      "bankBranch": "2222222222",
+      "accountNumber": 22222222222,
+      "address": "244/2059 Unit-6,Bhubaneswar",
+      "pincode": 751020,
+      "areaImpacted": 4,
+      "causeOfLoss": "flood"
     }
   ],
   "apply": [
